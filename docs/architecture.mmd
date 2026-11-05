@@ -1,0 +1,6 @@
+flowchart TD
+  B["Tor Browser"] --> T["Tor v3 onion service"]
+  L["Local browser"] --> A["Flask application"]
+  T --> A
+  A --> M["MySQL: private Docker network"]
+  A --> S["Session and ownership checks"]

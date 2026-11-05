@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.vagrant/
+*.db
+*.pem
+results/*
+!results/README.md
+!results/validation.txt
+backups/

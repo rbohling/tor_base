@@ -1,0 +1,8 @@
+.........                                                                [100%]
+9 passed in 4.82s
+
+Backend: temporary SQLite databases, not MySQL.
+Python compilation: passed.
+Provisioning shell syntax: passed.
+Compose and workflow YAML parsing: passed (runtime not executed).
+MySQL, Vagrant, Docker and live Tor: pending target environment.

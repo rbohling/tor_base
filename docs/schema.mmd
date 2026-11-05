@@ -1,0 +1,20 @@
+erDiagram
+  USERS ||--o{ POSTS : owns
+  CATEGORIES ||--o{ POSTS : classifies
+  USERS {
+    int id PK
+    varchar username UK
+    varchar password_hash
+  }
+  CATEGORIES {
+    int id PK
+    varchar name UK
+  }
+  POSTS {
+    int id PK
+    int user_id FK
+    int category_id FK
+    varchar title
+    text body
+    datetime created_at
+  }
