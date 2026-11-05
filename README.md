@@ -13,6 +13,20 @@ A small graduate database project: a private notes website built with Flask and 
 - Reproducible SQL and HTTP benchmarks with raw CSV, execution plans and JSON summaries.
 - `docs/Project_Guide.docx`, `docs/presentation.md` (slides and complete speaker notes), schema and architecture diagrams.
 
+## macOS quick start (Intel and Apple Silicon)
+
+Install and open [Docker Desktop for Mac](https://docs.docker.com/desktop/setup/install/mac-install/), then run these commands in the project folder:
+
+```bash
+bash scripts/macos.sh start
+bash scripts/macos.sh user alice
+bash scripts/macos.sh address
+```
+
+Open http://127.0.0.1:8080 locally, or open the printed onion address in Tor Browser after Tor finishes bootstrapping. The launcher generates configuration using containerized Python; no host Python, Vagrant or VirtualBox is required for startup.
+
+See **[the macOS guide](docs/MACOS.md)** for installation, updates, stop/start commands and Mac benchmark instructions. This is the current Mac setup guide; the Word guide's VM instructions apply to Windows.
+
 ## 1. Windows with Vagrant + VirtualBox
 
 Install Vagrant and VirtualBox from their official sites, reboot if prompted, and reopen PowerShell. Extract this project into a directory you control.
@@ -109,7 +123,7 @@ The default tests use temporary SQLite databases for fast application validation
 
 ## Backup and recovery
 
-From a Bash shell in the VM or Linux:
+From Terminal on macOS, or a Bash shell in the VM or Linux:
 
 ```bash
 mkdir -p backups

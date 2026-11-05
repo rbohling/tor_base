@@ -6,3 +6,8 @@ Python compilation: passed.
 Provisioning shell syntax: passed.
 Compose and workflow YAML parsing: passed (runtime not executed).
 MySQL, Vagrant, Docker and live Tor: pending target environment.
+
+macOS launcher update:
+7 mocked launcher tests passed on Linux; shell syntax passed.
+Combined suite: 16 passed (9 application tests plus 7 launcher tests).
+Native macOS/Docker Desktop and live onion execution remain unverified.
